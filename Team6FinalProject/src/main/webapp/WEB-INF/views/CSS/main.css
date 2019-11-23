@@ -1,0 +1,102 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: �L�n������
+}
+
+#allpage {
+	width: 1024px;
+	margin: auto auto
+}
+
+.menu {
+	overflow: auto;
+	width: 80%;
+	list-style-type: none;
+	background-color: #66B3FF;
+	border-bottom: 3px solid #cccccc;
+	border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 5px 5px 5px blue;
+    margin: auto
+}
+
+.menu li {
+	float: left;
+	width: 7em;
+	border-right: 1px solid #cccccc
+}
+
+.menu li a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	line-height: 2.5em;
+}
+
+.menu li a:hover {
+	color: white;
+	background-color: #0080ff
+}
+
+.title {
+	background-color: #0066cc;
+	line-height: 2.5em;
+	columns: #f0f0f0;
+	padding-left: 20px;
+}
+
+article section {
+	margin: 16px;
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 10px;
+}
+
+article section p {
+	margin: 16px 0;
+	line-height: 22px
+}
+
+.list {
+	list-style: decimal inside
+}
+
+aside dl {
+	margin: 16px
+}
+
+article {
+	width: 75%;
+	/*float: left;*/
+	margin: 15px auto
+}
+
+aside {
+	width: 20%;
+	float: right
+}
+
+.content {
+	width: 100%;
+	/* border: 2px solid black; */
+	overflow: auto;
+	padding-bottom: 20px;
+}
+
+footer {
+	background-color: #66B3FF;
+	line-height: 2.5em;
+	text-align: center;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.welcome {
+	width: 100%;
+	height: 100%;
+    color: black;
+	line-height: 2.5em;
+}

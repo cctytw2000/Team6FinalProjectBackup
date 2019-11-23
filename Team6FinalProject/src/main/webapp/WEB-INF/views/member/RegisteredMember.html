@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="../JS/RegisteredMember.js"></script>
+	<script src="../JS/FBGoogleRegistered.js"></script>
+
+	<link rel="stylesheet" href="../CSS/RegisteredMember.css">
+	<script src="https://kit.fontawesome.com/685268963f.js"></script>
+</head>
+
+<body>
+
+
+	<form action="../RegisteredMember.do" method="post">
+
+		<fieldset>
+			<legend>
+				申請帳號<em>必填</em>
+			</legend>
+			<div class="div1">
+				<label class='label1'>帳號:</label><input type="text" id="account" name="account"><i id="check"
+					class="fas fa-clipboard-check"></i><span id="account_msg"></span>
+			</div>
+			<div class="div1">
+				<label class='label1'>密碼:</label><input type="password" id="password" name="password"><i
+					onclick="showHide();" id="eye" class="fas fa-eye"></i><span id="msg_password"></span>
+
+				</button>
+				<h6 style="color: gray; font-size: 8px">(1.不可空白，2.至少六個字包含英文字母，數字，特殊字元(!@#$%^&*))</h6>
+			</div>
+
+			<div class="div1">
+				<label class='label1'>姓名:</label><input type="text" id="username" name="username"><span id="msg"></span>
+				<h6 style="color: gray; font-size: 8px">(1.不可空白，2.至少兩個字以上，3.必須為中文字)</h6>
+			</div>
+
+			<div style="margin: auto auto; width: 60%">
+				<button type="button" style="background-color: #0066FF" class="btn btn-facebook" onclick="FBLogin();">
+					<i class="fab fa-facebook-f fa-lg"></i> Facebook註冊
+				</button>
+				<button type="button" style="background-color: #FF3333" class="btn btn-google" onclick="GoogleLogin();">
+					<i class="fab fa-google-plus-g fa-lg"></i> Google註冊
+				</button>
+			</div>
+						<script async defer src="https://apis.google.com/js/api.js"
+				onload="this.onload=function(){};HandleGoogleApiLibrary()"
+				onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
+			<div id="submit" class="div1" style="text-align: center">
+				<button type="submit" disabled>註冊</button>
+
+			</div>
+		</fieldset>
+	</form>
+
+</body>
+
+</html>
